@@ -44,7 +44,7 @@ export default function WeeklyActivityTracker({ className = '' }: WeeklyActivity
     const start = new Date(weeklyData.weekStart);
     const end = new Date(weeklyData.weekEnd);
     
-    return `${start.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${end.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
+    return `${start.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'Asia/Kolkata' })} - ${end.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'Asia/Kolkata' })}`;
   };
 
   if (!isClient) {

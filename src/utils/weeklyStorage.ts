@@ -48,11 +48,18 @@ export const getWeekEnd = (weekStart: Date): Date => {
 };
 
 export const formatDateKey = (date: Date): string => {
-  return date.toISOString().split('T')[0];
+  // Use local date to avoid timezone issues
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
 };
 
 export const getDayName = (date: Date): string => {
-  return date.toLocaleDateString('en-US', { weekday: 'long' });
+  return date.toLocaleDateString('en-US', { 
+    weekday: 'long',
+    timeZone: 'Asia/Kolkata'
+  });
 };
 
 export const initializeWeeklyData = (): WeeklyData => {
