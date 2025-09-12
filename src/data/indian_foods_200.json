@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "name": "Aloo Paratha",
+    "category": "Indian",
+    "calories": 305,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 7,
+      "carbs": 51,
+      "fat": 11,
+      "fiber": 5
+    }
+  },
+  {
+    "id": 2,
+    "name": "Roti (Chapati)",
+    "category": "Indian",
+    "calories": 130,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 4,
+      "carbs": 23,
+      "fat": 1,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 3,
+    "name": "Masala Dosa",
+    "category": "Indian",
+    "calories": 344,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 9,
+      "carbs": 57,
+      "fat": 13,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 4,
+    "name": "Samosa",
+    "category": "Indian",
+    "calories": 160,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 4,
+      "carbs": 22,
+      "fat": 8,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 5,
+    "name": "Fish Fry",
+    "category": "Indian",
+    "calories": 261,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 24,
+      "carbs": 6,
+      "fat": 18,
+      "fiber": 0
+    }
+  },
+  {
+    "id": 6,
+    "name": "Paneer Curry",
+    "category": "Indian",
+    "calories": 288,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 14,
+      "carbs": 11,
+      "fat": 20,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 7,
+    "name": "Rajma",
+    "category": "Indian",
+    "calories": 249,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 12,
+      "carbs": 43,
+      "fat": 5,
+      "fiber": 10
+    }
+  },
+  {
+    "id": 8,
+    "name": "Chicken Curry",
+    "category": "Indian",
+    "calories": 364,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 28,
+      "carbs": 12,
+      "fat": 23,
+      "fiber": 1
+    }
+  },
+  {
+    "id": 9,
+    "name": "Idli",
+    "category": "Indian",
+    "calories": 52,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 10,
+    "name": "Pulao",
+    "category": "Indian",
+    "calories": 309,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 7,
+      "carbs": 49,
+      "fat": 8,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 11,
+    "name": "Kheer",
+    "category": "Indian",
+    "calories": 264,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 6,
+      "carbs": 38,
+      "fat": 8,
+      "fiber": 2
+    }
+  },
+  {
+    "id": 12,
+    "name": "Upma",
+    "category": "Indian",
+    "calories": 182,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 5,
+      "carbs": 32,
+      "fat": 8,
+      "fiber": 3
+    }
+  },
+  {
+    "id": 13,
+    "name": "Gulab Jamun",
+    "category": "Indian",
+    "calories": 177,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 1,
+      "carbs": 28,
+      "fat": 6,
+      "fiber": 0
+    }
+  },
+  {
+    "id": 14,
+    "name": "Dal (Lentils)",
+    "category": "Indian",
+    "calories": 169,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 13,
+      "carbs": 29,
+      "fat": 5,
+      "fiber": 6
+    }
+  },
+  {
+    "id": 15,
+    "name": "Plain Rice",
+    "category": "Indian",
+    "calories": 185,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 4,
+      "carbs": 48,
+      "fat": 1,
+      "fiber": 1
+    }
+  },
+  {
+    "id": 16,
+    "name": "Chole (Chickpeas)",
+    "category": "Indian",
+    "calories": 260,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 13,
+      "carbs": 45,
+      "fat": 6,
+      "fiber": 10
+    }
+  },
+  {
+    "id": 17,
+    "name": "Dhokla",
+    "category": "Indian",
+    "calories": 136,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 5,
+      "carbs": 22,
+      "fat": 4,
+      "fiber": 1
+    }
+  },
+  {
+    "id": 18,
+    "name": "Biryani",
+    "category": "Indian",
+    "calories": 382,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 21,
+      "carbs": 43,
+      "fat": 13,
+      "fiber": 3
+    }
+  },
+  {
+    "id": 19,
+    "name": "Pakora",
+    "category": "Indian",
+    "calories": 81,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 2,
+      "carbs": 11,
+      "fat": 6,
+      "fiber": 0
+    }
+  },
+  {
+    "id": 20,
+    "name": "Poha",
+    "category": "Indian",
+    "calories": 183,
+    "unit": "1 serving",
+    "nutrients": {
+      "protein": 4,
+      "carbs": 31,
+      "fat": 5,
+      "fiber": 2
+    }
+  }
+]

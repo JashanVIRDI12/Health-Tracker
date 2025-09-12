@@ -1,0 +1,353 @@
+[
+  {
+    "id": 1,
+    "name": "Push-ups",
+    "category": "Chest",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Chest", "Shoulders", "Triceps"],
+    "equipment": "None",
+    "caloriesPerMinute": 8,
+    "description": "Classic bodyweight exercise targeting chest, shoulders, and triceps"
+  },
+  {
+    "id": 2,
+    "name": "Squats",
+    "category": "Legs",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings"],
+    "equipment": "None",
+    "caloriesPerMinute": 6,
+    "description": "Fundamental lower body exercise for building leg strength"
+  },
+  {
+    "id": 3,
+    "name": "Deadlifts",
+    "category": "Back",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Hamstrings", "Glutes", "Lower Back", "Traps"],
+    "equipment": "Barbell",
+    "caloriesPerMinute": 10,
+    "description": "Compound movement targeting posterior chain muscles"
+  },
+  {
+    "id": 4,
+    "name": "Bench Press",
+    "category": "Chest",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Chest", "Shoulders", "Triceps"],
+    "equipment": "Barbell",
+    "caloriesPerMinute": 7,
+    "description": "Primary chest building exercise using barbell"
+  },
+  {
+    "id": 5,
+    "name": "Pull-ups",
+    "category": "Back",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Lats", "Biceps", "Rhomboids"],
+    "equipment": "Pull-up Bar",
+    "caloriesPerMinute": 9,
+    "description": "Upper body pulling exercise for back and bicep development"
+  },
+  {
+    "id": 6,
+    "name": "Overhead Press",
+    "category": "Shoulders",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Shoulders", "Triceps", "Core"],
+    "equipment": "Barbell",
+    "caloriesPerMinute": 6,
+    "description": "Standing shoulder press for deltoid development"
+  },
+  {
+    "id": 7,
+    "name": "Lunges",
+    "category": "Legs",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings"],
+    "equipment": "None",
+    "caloriesPerMinute": 7,
+    "description": "Unilateral leg exercise for balance and strength"
+  },
+  {
+    "id": 8,
+    "name": "Plank",
+    "category": "Core",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Core", "Shoulders", "Glutes"],
+    "equipment": "None",
+    "caloriesPerMinute": 4,
+    "description": "Isometric core strengthening exercise"
+  },
+  {
+    "id": 9,
+    "name": "Burpees",
+    "category": "Full Body",
+    "difficulty": "Advanced",
+    "muscleGroups": ["Full Body"],
+    "equipment": "None",
+    "caloriesPerMinute": 12,
+    "description": "High-intensity full body exercise combining squat, plank, and jump"
+  },
+  {
+    "id": 10,
+    "name": "Dumbbell Rows",
+    "category": "Back",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Lats", "Rhomboids", "Biceps"],
+    "equipment": "Dumbbells",
+    "caloriesPerMinute": 6,
+    "description": "Single-arm rowing exercise for back development"
+  },
+  {
+    "id": 11,
+    "name": "Mountain Climbers",
+    "category": "Cardio",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Core", "Shoulders", "Legs"],
+    "equipment": "None",
+    "caloriesPerMinute": 10,
+    "description": "Dynamic cardio exercise in plank position"
+  },
+  {
+    "id": 12,
+    "name": "Bicep Curls",
+    "category": "Arms",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Biceps"],
+    "equipment": "Dumbbells",
+    "caloriesPerMinute": 4,
+    "description": "Isolation exercise for bicep development"
+  },
+  {
+    "id": 13,
+    "name": "Tricep Dips",
+    "category": "Arms",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Triceps", "Shoulders"],
+    "equipment": "Bench/Chair",
+    "caloriesPerMinute": 5,
+    "description": "Bodyweight exercise targeting triceps"
+  },
+  {
+    "id": 14,
+    "name": "Russian Twists",
+    "category": "Core",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Obliques", "Core"],
+    "equipment": "None",
+    "caloriesPerMinute": 5,
+    "description": "Rotational core exercise for oblique strength"
+  },
+  {
+    "id": 15,
+    "name": "Leg Press",
+    "category": "Legs",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Quadriceps", "Glutes"],
+    "equipment": "Leg Press Machine",
+    "caloriesPerMinute": 8,
+    "description": "Machine-based leg exercise for quad and glute development"
+  },
+  {
+    "id": 16,
+    "name": "Lat Pulldowns",
+    "category": "Back",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Lats", "Biceps", "Rhomboids"],
+    "equipment": "Cable Machine",
+    "caloriesPerMinute": 6,
+    "description": "Cable exercise for lat development"
+  },
+  {
+    "id": 17,
+    "name": "Calf Raises",
+    "category": "Legs",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Calves"],
+    "equipment": "None",
+    "caloriesPerMinute": 3,
+    "description": "Isolation exercise for calf muscle development"
+  },
+  {
+    "id": 18,
+    "name": "Hip Thrusts",
+    "category": "Glutes",
+    "difficulty": "Intermediate",
+    "muscleGroups": ["Glutes", "Hamstrings"],
+    "equipment": "Bench",
+    "caloriesPerMinute": 7,
+    "description": "Glute-focused exercise for posterior chain strength"
+  },
+  {
+    "id": 19,
+    "name": "Jumping Jacks",
+    "category": "Cardio",
+    "difficulty": "Beginner",
+    "muscleGroups": ["Full Body"],
+    "equipment": "None",
+    "caloriesPerMinute": 8,
+    "description": "Classic cardio exercise for full body warm-up"
+  },
+  {
+    "id": 20,
+    "name": "Battle Ropes",
+    "category": "Cardio",
+    "difficulty": "Advanced",
+    "muscleGroups": ["Arms", "Core", "Shoulders"],
+    "equipment": "Battle Ropes",
+    "caloriesPerMinute": 15,
+    "description": "High-intensity rope exercise for cardio and strength"
+  },
+  {
+      "id": 21,
+      "name": "Walking",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "muscleGroups": ["Legs", "Calves", "Glutes"],
+      "equipment": "None",
+      "caloriesPerMinute": 4,
+      "description": "Low-impact steady-state cardio suitable for all fitness levels"
+    },
+    {
+      "id": 22,
+      "name": "Running",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Legs", "Core", "Glutes"],
+      "equipment": "None",
+      "caloriesPerMinute": 10,
+      "description": "Higher-intensity cardio exercise improving endurance and calorie burn"
+    },
+    {
+      "id": 23,
+      "name": "Cycling",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "muscleGroups": ["Quadriceps", "Hamstrings", "Calves", "Glutes"],
+      "equipment": "Bicycle/Stationary Bike",
+      "caloriesPerMinute": 8,
+      "description": "Low-impact cardio improving cardiovascular fitness and leg strength"
+    },
+    {
+      "id": 24,
+      "name": "Swimming",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Full Body"],
+      "equipment": "Pool",
+      "caloriesPerMinute": 11,
+      "description": "Full-body cardio exercise improving endurance, strength, and mobility"
+    },
+    {
+      "id": 25,
+      "name": "Jump Rope",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Legs", "Shoulders", "Core"],
+      "equipment": "Jump Rope",
+      "caloriesPerMinute": 12,
+      "description": "High-intensity cardio for agility, endurance, and fat loss"
+    },
+    {
+      "id": 26,
+      "name": "Kettlebell Swings",
+      "category": "Full Body",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Glutes", "Hamstrings", "Core", "Shoulders"],
+      "equipment": "Kettlebell",
+      "caloriesPerMinute": 13,
+      "description": "Explosive hip hinge movement for strength and conditioning"
+    },
+    {
+      "id": 27,
+      "name": "Handstand Push-ups",
+      "category": "Calisthenics",
+      "difficulty": "Advanced",
+      "muscleGroups": ["Shoulders", "Triceps", "Core"],
+      "equipment": "None/Wall Support",
+      "caloriesPerMinute": 9,
+      "description": "Advanced bodyweight shoulder press requiring balance and strength"
+    },
+    {
+      "id": 28,
+      "name": "Pistol Squats",
+      "category": "Calisthenics",
+      "difficulty": "Advanced",
+      "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings", "Core"],
+      "equipment": "None",
+      "caloriesPerMinute": 8,
+      "description": "Single-leg squat variation for balance, mobility, and leg strength"
+    },
+    {
+      "id": 29,
+      "name": "Box Jumps",
+      "category": "HIIT",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "equipment": "Plyo Box",
+      "caloriesPerMinute": 12,
+      "description": "Explosive plyometric movement improving power and conditioning"
+    },
+    {
+      "id": 30,
+      "name": "Sprints",
+      "category": "HIIT",
+      "difficulty": "Advanced",
+      "muscleGroups": ["Legs", "Core", "Glutes"],
+      "equipment": "None/Track",
+      "caloriesPerMinute": 15,
+      "description": "Short bursts of maximum-effort running for fat loss and speed"
+    },
+    {
+      "id": 31,
+      "name": "Shadow Boxing",
+      "category": "HIIT",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Arms", "Shoulders", "Core"],
+      "equipment": "None",
+      "caloriesPerMinute": 9,
+      "description": "Cardio and coordination drill mimicking boxing movements"
+    },
+    {
+      "id": 32,
+      "name": "Rowing",
+      "category": "Cardio",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Back", "Arms", "Core", "Legs"],
+      "equipment": "Rowing Machine",
+      "caloriesPerMinute": 12,
+      "description": "Full-body cardio workout combining pulling and leg drive"
+    },
+    {
+      "id": 33,
+      "name": "Turkish Get-up",
+      "category": "Strength",
+      "difficulty": "Advanced",
+      "muscleGroups": ["Full Body", "Core", "Shoulders"],
+      "equipment": "Kettlebell/Dumbbell",
+      "caloriesPerMinute": 8,
+      "description": "Complex movement developing strength, stability, and mobility"
+    },
+    {
+      "id": 34,
+      "name": "Farmer’s Carry",
+      "category": "Strength",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Grip", "Forearms", "Core", "Shoulders"],
+      "equipment": "Dumbbells/Kettlebells",
+      "caloriesPerMinute": 7,
+      "description": "Functional strength exercise carrying heavy weights while walking"
+    },
+    {
+      "id": 35,
+      "name": "Medicine Ball Slams",
+      "category": "HIIT",
+      "difficulty": "Intermediate",
+      "muscleGroups": ["Core", "Shoulders", "Back"],
+      "equipment": "Medicine Ball",
+      "caloriesPerMinute": 14,
+      "description": "Explosive movement for full-body power and conditioning"
+    }
+  
+]
