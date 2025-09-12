@@ -14,6 +14,7 @@
    - Add authorized redirect URIs:
      - `http://localhost:3001/api/auth/callback/google`
      - `http://localhost:3000/api/auth/callback/google` (backup)
+     - `https://health-tracker-amber-ten.vercel.app/api/auth/callback/google` (production)
    - Copy the Client ID and Client Secret
 
 ## 2. Update Environment Variables
@@ -53,6 +54,22 @@ npm run dev
 - The NEXTAUTH_URL should match your development server URL
 - Keep your Client Secret secure and never commit it to version control
 - For production, update the redirect URIs to your production domain
+- Set NEXTAUTH_URL to your production URL in Vercel environment variables
+
+## Production Deployment Setup
+
+For your Vercel deployment at `https://health-tracker-amber-ten.vercel.app/`:
+
+1. **Vercel Environment Variables:**
+   ```
+   NEXTAUTH_URL=https://health-tracker-amber-ten.vercel.app
+   GOOGLE_CLIENT_ID=your_actual_google_client_id
+   GOOGLE_CLIENT_SECRET=your_actual_google_client_secret
+   NEXTAUTH_SECRET=your_generated_secret
+   ```
+
+2. **Google Console Redirect URI:**
+   - Add: `https://health-tracker-amber-ten.vercel.app/api/auth/callback/google`
 
 ## Troubleshooting
 
