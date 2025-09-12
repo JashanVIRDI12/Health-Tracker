@@ -31,13 +31,19 @@ const STORAGE_KEY = 'health_tracker_weekly_data';
 export const getWeekStart = (date: Date = new Date()): Date => {
   const d = new Date(date);
   const day = d.getDay();
-  const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Adjust when day is Sunday
-  return new Date(d.setDate(diff));
+  // Calculate days to subtract to get to Monday (day 1)
+  // Sunday = 0, Monday = 1, Tuesday = 2, etc.
+  const daysToSubtract = day === 0 ? 6 : day - 1;
+  const weekStart = new Date(d);
+  weekStart.setDate(d.getDate() - daysToSubtract);
+  weekStart.setHours(0, 0, 0, 0); // Reset time to start of day
+  return weekStart;
 };
 
 export const getWeekEnd = (weekStart: Date): Date => {
   const weekEnd = new Date(weekStart);
   weekEnd.setDate(weekStart.getDate() + 6);
+  weekEnd.setHours(23, 59, 59, 999); // Set to end of day
   return weekEnd;
 };
 
