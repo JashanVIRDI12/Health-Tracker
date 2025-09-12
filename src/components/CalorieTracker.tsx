@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Search, Plus, Trash2, Calculator, Target } from 'lucide-react';
-import { useAppContext } from '@/app/page';
+import { useAppContext } from '@/contexts/AppContext';
 import { loadWeeklyData, addFoodToDay, removeFoodFromDay, formatDateKey } from '@/utils/weeklyStorage';
 import indianFoodsData from '@/data/indian_foods_200.json';
 

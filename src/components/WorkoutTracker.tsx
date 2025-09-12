@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Plus, Trash2, Timer, Dumbbell, Activity, Search } from 'lucide-react';
-import { useAppContext } from '@/app/page';
+import { useAppContext } from '@/contexts/AppContext';
 import workoutsData from '@/data/workouts.json';
 import { loadWeeklyData, addWorkoutToDay, removeWorkoutFromDay, formatDateKey } from '@/utils/weeklyStorage';
 

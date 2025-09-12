@@ -1,11 +1,12 @@
 'use client';
-import { useState, useEffect, createContext, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { Activity, Utensils, Home, BarChart3, Target, TrendingUp, Clock, Zap } from 'lucide-react';
 import CalorieTracker from '@/components/CalorieTracker';
 import WorkoutTracker from '@/components/WorkoutTracker';
 import DateTimeDisplay from '@/components/DateTimeDisplay';
 import WeeklyActivityTracker from '@/components/WeeklyActivityTracker';
 import { AuthProvider, useAuth } from '@/contexts/AuthContext';
+import { AppContext, AppContextType, FoodItem, WorkoutSession } from '@/contexts/AppContext';
 import AuthPage from '@/components/auth/AuthPage';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import UserProfile from '@/components/UserProfile';
@@ -14,44 +15,6 @@ import { Toaster } from 'react-hot-toast';
 import { SessionProvider } from 'next-auth/react';
 
 type TabType = 'dashboard' | 'calories' | 'workouts';
-
-interface FoodItem {
-  id: string;
-  name: string;
-  calories: number;
-  protein: number;
-  carbs: number;
-  fat: number;
-  serving: string;
-  quantity: number;
-}
-
-interface WorkoutSession {
-  id: string;
-  name: string;
-  duration: number;
-  caloriesBurned: number;
-  date: string;
-}
-
-interface AppContextType {
-  selectedFoods: FoodItem[];
-  workoutSessions: WorkoutSession[];
-  dailyGoal: number;
-  updateSelectedFoods: (foods: FoodItem[]) => void;
-  updateWorkoutSessions: (sessions: WorkoutSession[]) => void;
-  updateDailyGoal: (goal: number) => void;
-}
-
-const AppContext = createContext<AppContextType | undefined>(undefined);
-
-export const useAppContext = () => {
-  const context = useContext(AppContext);
-  if (!context) {
-    throw new Error('useAppContext must be used within AppProvider');
-  }
-  return context;
-};
 
 interface DashboardData {
   todayCalories: number;
