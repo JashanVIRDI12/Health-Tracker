@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Search, Plus, Trash2, Calculator, Target } from 'lucide-react';
+import { Search, Plus, Trash2, Calculator, Target, Settings } from 'lucide-react';
 import { useAppContext } from '@/contexts/AppContext';
 import { loadWeeklyData, addFoodToDay, removeFoodFromDay, formatDateKey } from '@/utils/weeklyStorage';
 import indianFoodsData from '@/data/indian_foods_200.json';
+import CalorieGoalSetup from './CalorieGoalSetup';
 
 interface FoodItem {
   id: string;
@@ -45,6 +46,8 @@ export default function CalorieTracker() {
   const [filteredFoods, setFilteredFoods] = useState<IndianFood[]>(foodsData);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [weeklyData, setWeeklyData] = useState(loadWeeklyData());
+  const [showGoalSetup, setShowGoalSetup] = useState(false);
+  const [goalMethod, setGoalMethod] = useState<'manual' | 'calculated'>('manual');
 
   const categories = ['All', 'Indian', 'Fruit', 'Snack', 'Beverage', 'Sweet', 'Protein', 'Healthy'];
 
@@ -150,6 +153,17 @@ export default function CalorieTracker() {
     setWeeklyData(updatedWeeklyData);
   };
 
+  const handleGoalSet = (calories: number, method: 'manual' | 'calculated', userData?: any) => {
+    updateDailyGoal(calories);
+    setGoalMethod(method);
+    setShowGoalSetup(false);
+    
+    // Store user data in localStorage if calculated method was used
+    if (method === 'calculated' && userData) {
+      localStorage.setItem('userCalorieData', JSON.stringify(userData));
+    }
+  };
+
   const totalCalories = selectedFoods.reduce((sum, food) => sum + (food.calories * food.quantity), 0);
   const totalProtein = selectedFoods.reduce((sum, food) => sum + (food.protein * food.quantity), 0);
   const totalCarbs = selectedFoods.reduce((sum, food) => sum + (food.carbs * food.quantity), 0);
@@ -175,24 +189,27 @@ export default function CalorieTracker() {
               </div>
               <h2 className="text-xl font-medium text-gray-900">Daily Goal</h2>
             </div>
+            <button
+              onClick={() => setShowGoalSetup(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+            >
+              <Settings className="w-4 h-4" />
+              Set Goal
+            </button>
           </div>
-          <div className="flex items-center gap-4">
-            <input
-              type="number"
-              value={dailyGoal}
-              onChange={(e) => {
-                const value = e.target.value;
-                if (value === '' || value === '0') {
-                  updateDailyGoal(0);
-                } else {
-                  updateDailyGoal(parseInt(value) || 2000);
-                }
-              }}
-              className="w-24 px-3 py-2 bg-white border border-gray-200 rounded-lg text-center font-bold text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              min="0"
-              max="5000"
-            />
-            <span className="text-gray-700 font-medium">calories per day</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="text-3xl font-bold text-gray-900">{dailyGoal}</div>
+              <span className="text-gray-700 font-medium">calories per day</span>
+            </div>
+            <div className="text-right">
+              <div className="text-sm text-gray-500">
+                Method: <span className="capitalize font-medium">{goalMethod}</span>
+              </div>
+              {goalMethod === 'calculated' && (
+                <div className="text-xs text-blue-600">Based on your profile</div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -246,10 +263,10 @@ export default function CalorieTracker() {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full md:w-48 px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full md:w-48 px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
             >
               {categories.map(category => (
-                <option key={category} value={category}>{category}</option>
+                <option key={category} value={category} className="text-gray-900 bg-white">{category}</option>
               ))}
             </select>
           </div>
@@ -358,6 +375,15 @@ export default function CalorieTracker() {
               ))}
             </div>
           </div>
+        )}
+
+        {/* Calorie Goal Setup Modal */}
+        {showGoalSetup && (
+          <CalorieGoalSetup
+            onGoalSet={handleGoalSet}
+            currentGoal={dailyGoal}
+            onClose={() => setShowGoalSetup(false)}
+          />
         )}
       </div>
     </div>
